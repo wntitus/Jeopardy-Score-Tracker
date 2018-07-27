@@ -1,18 +1,66 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=a99119d8-be65-460b-af84-6cf4564b3163");
+    @font-face{
+        font-family:"Swiss911 Cm BT W00 Regular";
+        src:url("Fonts/836a45df-3d08-444d-bbd9-faab4dfe22a7.eot?#iefix");
+        src:url("Fonts/836a45df-3d08-444d-bbd9-faab4dfe22a7.eot?#iefix") format("eot"),url("Fonts/a2a4e0c2-56b1-4a2f-a243-ed5bed461879.woff2") format("woff2"),url("Fonts/1ae38e78-f77d-4d08-ae8f-ffe1bc744397.woff") format("woff"),url("Fonts/5245ec7a-1917-4329-b76b-be51121218b3.ttf") format("truetype");
+    }
+
+
+    /*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+
+
+
+
 * {
     box-sizing: border-box;
 }
 
 .trackerBody {
-    width: 75%;
+    width: 100%;
     height: 90%;
     margin: auto;
-    border: .5px solid red;
 }
 
 .playerNames {
-    width: 50%;
-    height: 25%;
+    width: 90%;
+    height: 57px;
     margin: auto;
-    float: left;
-    border: .5px solid black;
+    overflow: auto;
+    margin-top: 10px;
 }
+
+h1 {
+    font-family: 'Swiss911 Cm BT W00 Regular';
+    display: inline;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.75px;
+    padding-top: 3px;
+}
+
+.playerOne, .playerTwo {
+    width: 50%;
+    text-align: center;
+    float: left;
+    background-color: rgb(47, 0, 184);
+    border: 2px solid black;
+}
+
+.playerOne {
+    border-right: 0px;
+}
+
+.playerTwo {
+    border-left: 0px;
+}
+
+
+
+
+
