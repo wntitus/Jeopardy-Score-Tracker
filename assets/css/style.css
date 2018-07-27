@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.trackerBody {
+    width: 75%;
+    height: 90%;
+    margin: auto;
+    border: .5px solid red;
+}
+
+.playerNames {
+    width: 50%;
+    height: 25%;
+    margin: auto;
+    float: left;
+    border: .5px solid black;
+}
