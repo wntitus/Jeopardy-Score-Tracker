@@ -22,16 +22,17 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
 
 .trackerBody {
     width: 100%;
-    height: 90%;
+    height: 500px;
     margin: auto;
 }
 
 .playerNames {
     width: 90%;
-    height: 57px;
+    height: 25%;
     margin: auto;
     overflow: auto;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -44,12 +45,12 @@ h1 {
     padding-top: 3px;
 }
 
-.playerOne, .playerTwo {
-    width: 50%;
+.playerOne, .playerTwo, .playerThree {
+    width: 33%;
     text-align: center;
     float: left;
     background-color: rgb(47, 0, 184);
-    border: 2px solid black;
+    border: 6.5px solid black;
 }
 
 .playerOne {
@@ -58,6 +59,45 @@ h1 {
 
 .playerTwo {
     border-left: 0px;
+    border-right: 0px;
+}
+
+.playerThree {
+    border-left: 0px;
+}
+
+.categories {
+    height: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 13.67%;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 156.33px;
+    height: 16.67%;
+    background-color: rgb(47, 0, 184);
+    color: #FFCC00;
+    border: 4.5px solid black;
+    font-family: 'Swiss911 Cm BT W00 Regular';
+    font-size: 57px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.75px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9f80ff;
 }
 
 
