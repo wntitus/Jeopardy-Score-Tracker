@@ -1,11 +1,14 @@
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=a99119d8-be65-460b-af84-6cf4564b3163");
     @font-face{
+        font-family:"ITC Korinna W01 Regular";
+        src:url("Fonts/a49b67b0-f16a-437e-9921-fe4634b10205.eot?#iefix");
+        src:url("Fonts/a49b67b0-f16a-437e-9921-fe4634b10205.eot?#iefix") format("eot"),url("Fonts/3f469424-1e13-4a05-948a-12bc1330398b.woff2") format("woff2"),url("Fonts/e7909bab-13b9-4079-952d-4b50e4d250b3.woff") format("woff"),url("Fonts/341d31f5-4ea5-4f30-871a-5de7360ba2ac.ttf") format("truetype");
+    }
+    @font-face{
         font-family:"Swiss911 Cm BT W00 Regular";
         src:url("Fonts/836a45df-3d08-444d-bbd9-faab4dfe22a7.eot?#iefix");
         src:url("Fonts/836a45df-3d08-444d-bbd9-faab4dfe22a7.eot?#iefix") format("eot"),url("Fonts/a2a4e0c2-56b1-4a2f-a243-ed5bed461879.woff2") format("woff2"),url("Fonts/1ae38e78-f77d-4d08-ae8f-ffe1bc744397.woff") format("woff"),url("Fonts/5245ec7a-1917-4329-b76b-be51121218b3.ttf") format("truetype");
     }
-
-
     /*
 This CSS resource incorporates links to font software which is the valuable copyrighted
 property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
@@ -95,10 +98,13 @@ button {
     border: 4.5px solid black;
     font-family: 'Swiss911 Cm BT W00 Regular';
     font-size: 57px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1.75px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.scoreVal {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.75px;
 }
 
 button:hover {
@@ -113,6 +119,15 @@ button:hover {
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1.75px;
     padding-top: 3px;
+}
+
+.switch {
+    font-family:"ITC Korinna W01 Regular";
+    color: white;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: 275px;
+    padding: 0 15px;
 }
 
 
