@@ -105,12 +105,43 @@ $(document).ready(function() {
             if (wesCorrect === true ) {
                 wesScore += parseInt(wesWager);
                 scoreUpdate(1);
+                $(".categories").detach();
+                $(".final").detach();
+
             } else if (sydCorrect === true) {
                 sydScore += parseInt(sydWager);
                 scoreUpdate(2);
+                $(".categories").detach();
+                $(".final").detach();
+
             } else if (karlyCorrect === true) {
                 karlyScore += parseInt(karlyWager);
                 scoreUpdate(3);
+                $(".categories").detach();
+                $(".final").detach();
+
+            }
+
+            if (wesCorrect === false) {
+                wesScore -= parseInt(wesWager);
+                scoreUpdate(1);
+                $("categories").detach();
+                $(".final").detach();
+
+            } 
+            if (sydCorrect === false) {
+                sydScore -= parseInt(sydWager);
+                scoreUpdate(2);
+                $(".categories").detach();
+                $(".final").detach();
+
+            } 
+            if (karlyCorrect === false) {
+                karlyScore -= parseInt(karlyWager);
+                scoreUpdate(3);
+                $(".categories").detach();
+                $(".final").detach();
+
             }
         })
 
