@@ -121,7 +121,7 @@ button:hover {
     padding-top: 3px;
 }
 
-.switch {
+.switch, .final {
     font-family:"ITC Korinna W01 Regular";
     color: white;
     width: fit-content;
@@ -134,6 +134,10 @@ button:hover {
     display: none;
 }
 
+.final {
+    display: none;
+    width: 893.5px;
+}
 
 
 
