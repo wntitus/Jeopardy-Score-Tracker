@@ -51,6 +51,7 @@ h1 {
     float: left;
     background-color: rgb(47, 0, 184);
     border: 6.5px solid black;
+    cursor: pointer;
 }
 
 .playerOne {
