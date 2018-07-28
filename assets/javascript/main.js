@@ -32,6 +32,14 @@ $(document).ready(function() {
                 addWesChosen = false;
                 } 
             })
+            $(".scoreValDbl").on("click", function() {
+                if (addWesChosen === true) {
+                    wesScore += parseInt($(this).val());
+                    scoreUpdate(1);
+                    $(this).detach();
+                    addWesChosen = false;
+                }
+            })
         })
 
         $(".playerTwo").on("click", function() {
@@ -44,11 +52,28 @@ $(document).ready(function() {
                     addSydChosen = false;
                 }
             })
+            $(".scoreValDbl").on("click", function() {
+                if (addSydChosen === true) {
+                    sydScore += parseInt($(this).val());
+                    scoreUpdate(2);
+                    $(this).detach();
+                    addSydChosen = false;
+                }
+            })
         })
+
 
         $(".playerThree").on("click", function() {
             addKarlyChosen = true;
             $(".scoreVal").on("click", function() {
+                if (addKarlyChosen === true) {
+                    karlyScore += parseInt($(this).val());
+                    scoreUpdate(3);
+                    $(this).detach();
+                    addKarlyChosen = false;
+                }
+            })
+            $(".scoreValDbl").on("click", function() {
                 if (addKarlyChosen === true) {
                     karlyScore += parseInt($(this).val());
                     scoreUpdate(3);
@@ -62,20 +87,22 @@ $(document).ready(function() {
 
 
         $(".switch").on("click", function() {
-            $("button[data-dbl = '200']").attr("value", "200");
-            $("button[data-dbl = '200']").text("$200");
-            $("button[data-dbl = '400']").attr("value", "400");
-            $("button[data-dbl = '400']").text("$400");
-            $("button[data-dbl = '800']").attr("value", "800");
-            $("button[data-dbl = '800']").text("$800");
-            $("button[data-dbl = '1000']").attr("value", "1000");
-            $("button[data-dbl = '1000']").text("$1000");
-            $("button[data-dbl = '1200']").attr("value", "1200");
-            $("button[data-dbl = '1200']").text("$1200");
-            $("button[data-dbl = '1600']").attr("value", "1600");
-            $("button[data-dbl = '1600']").text("$1600");
-            $("button[data-dbl = '2000']").attr("value", "2000");
-            $("button[data-dbl = '2000']").text("$2000");
+            $("button[class = 'scoreVal']").css("display", "none");
+            $("button[class = 'scoreValDbl']").css("display", "inline-block");
+            // $("button[data-dbl = '200']").attr("value", "200");
+            // $("button[data-dbl = '200']").text("$200");
+            // $("button[data-dbl = '400']").attr("value", "400");
+            // $("button[data-dbl = '400']").text("$400");
+            // $("button[data-dbl = '800']").attr("value", "800");
+            // $("button[data-dbl = '800']").text("$800");
+            // $("button[data-dbl = '1000']").attr("value", "1000");
+            // $("button[data-dbl = '1000']").text("$1000");
+            // $("button[data-dbl = '1200']").attr("value", "1200");
+            // $("button[data-dbl = '1200']").text("$1200");
+            // $("button[data-dbl = '1600']").attr("value", "1600");
+            // $("button[data-dbl = '1600']").text("$1600");
+            // $("button[data-dbl = '2000']").attr("value", "2000");
+            // $("button[data-dbl = '2000']").text("$2000");
             $(".switch").detach();
         })
 
