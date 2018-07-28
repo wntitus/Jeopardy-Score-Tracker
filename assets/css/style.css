@@ -20,6 +20,10 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
     box-sizing: border-box;
 }
 
+body {
+    background-color: #270066;
+}
+
 .trackerBody {
     width: 100%;
     height: 500px;
