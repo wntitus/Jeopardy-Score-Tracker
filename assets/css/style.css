@@ -100,6 +100,15 @@ button:hover {
     background-color: #9f80ff;
 }
 
+.score {
+    font-family: 'Swiss911 Cm BT W00 Regular';
+    display: inline;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.75px;
+    padding-top: 3px;
+}
 
 
 
